@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "348325505267",
+    "project_id": "mocoin-9c04c",
+    "storage_bucket": "mocoin-9c04c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348325505267:android:f5a784cf6b3355f903ef86",
+        "android_client_info": {
+          "package_name": "com.mocoin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348325505267-e469a0860cqm1osmo3b6t6f2dkm06fn5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mocoin",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "348325505267-5k909e0dg8c0li2jd1gq0cj112pei6pp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg8EV0FbsD5DvbDKiW28NANS2FBQYE7nQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348325505267-5k909e0dg8c0li2jd1gq0cj112pei6pp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
