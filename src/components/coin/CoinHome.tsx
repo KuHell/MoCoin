@@ -6,9 +6,10 @@ import styled from 'styled-components/native';
 interface propsType {
   index: number;
   symbol: string;
+  id: string;
 }
 
-const CoinHome = ({index, symbol}: propsType) => {
+const CoinHome = ({index, symbol, id}: propsType) => {
   const navigation: any = useNavigation();
   const opacity = useRef(new Animated.Value(0)).current;
 
@@ -19,7 +20,6 @@ const CoinHome = ({index, symbol}: propsType) => {
       useNativeDriver: true,
       delay: index * 30,
     }).start();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // const scale = opacity.interpolate({
@@ -29,9 +29,10 @@ const CoinHome = ({index, symbol}: propsType) => {
 
   return (
     <CoinContainer
+      // style={{opacity, transform: [{scale}]}}
       style={{opacity}}
       // onPress={() => navigation.navigate()}>
-      onPress={() => navigation.navigate('CoinDetail', {symbol})}>
+      onPress={() => navigation.navigate('CoinDetail', {symbol, id})}>
       <CoinIcon
         source={{
           uri: `https://coinicons-api.vercel.app/api/icon/${symbol.toLowerCase()}`,

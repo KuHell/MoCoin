@@ -42,7 +42,7 @@ const Home = () => {
         // keyExtractor={({item}: any) => item.id} // 고유값
         data={cleanData} // List에서 사용할 Data
         renderItem={({item, index}: CoinDataType | any) => (
-          <CoinHome index={index} symbol={item.symbol} />
+          <CoinHome index={index} id={item.id} symbol={item.symbol} />
         )}
       />
     </Cointainer>
