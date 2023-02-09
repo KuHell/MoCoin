@@ -3,7 +3,7 @@ import {FlatList} from 'react-native';
 import {useQuery} from 'react-query';
 import {coins} from '../api/Coin';
 import styled from 'styled-components/native';
-import CoinHome from '../components/CoinHome';
+import CoinHome from '../components/coin/CoinHome';
 import Loading from '../components/Loading';
 
 interface CoinDataType {
@@ -41,8 +41,8 @@ const Home = () => {
         }} // numColumns가 있어야 쓸 수 있음 {n}개를 한번에 묶어서 style 지정
         // keyExtractor={({item}: any) => item.id} // 고유값
         data={cleanData} // List에서 사용할 Data
-        renderItem={({item}: CoinDataType | any) => (
-          <CoinHome symbol={item.symbol} />
+        renderItem={({item, index}: CoinDataType | any) => (
+          <CoinHome index={index} symbol={item.symbol} />
         )}
       />
     </Cointainer>
